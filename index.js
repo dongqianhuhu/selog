@@ -1,7 +1,7 @@
 const { Console } = require('console');
 const util = require('util');
 
-function Logger(config = {}) {
+module.exports = function Logger(config = {}) {
     if (!(this instanceof Logger)) {
         return new Logger();
     }
